@@ -1,0 +1,231 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedsharepointonline_7700c"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      },
+      "shared_approvals": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "vr_sharedapprovals_f390b"
+        },
+        "api": {
+          "name": "shared_approvals"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_an_item_is_created": {
+          "recurrence": {
+            "interval": 1,
+            "frequency": "Minute"
+          },
+          "splitOn": "@triggerOutputs()?['body/value']",
+          "metadata": {
+            "operationMetadataId": "d0068f6b-620d-48ec-a7be-69145741c709"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "GetOnNewItems",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://olddominion.sharepoint.com/sites/YT-Leaves",
+              "table": "5e292124-014d-42ef-9579-ce97151b2fea"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Update_item": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "4dfd8a9f-9625-41c3-afd8-cd53948cb70b"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "PatchItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://olddominion.sharepoint.com/sites/YT-Leaves",
+              "table": "5e292124-014d-42ef-9579-ce97151b2fea",
+              "id": "@triggerOutputs()?['body/ID']",
+              "item/Title": "@triggerOutputs()?['body/Title']",
+              "item/Status/Value": "Under Review",
+              "item/ApprovalInfo": "<p>Approval Started By@{triggerOutputs()?['body/Editor/DisplayName']}</p>"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Start_and_wait_for_an_approval": {
+          "runAfter": {
+            "Update_item": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "462a99da-da7c-453c-a4c6-a6930c939efb"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_approvals",
+              "operationId": "StartAndWaitForAnApproval",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_approvals"
+            },
+            "parameters": {
+              "approvalType": "Basic",
+              "WebhookApprovalCreationInput/title": "Expense for Approval  @{outputs('Update_item')?['body/Title']}",
+              "WebhookApprovalCreationInput/assignedTo": "ssura005@odu.edu",
+              "WebhookApprovalCreationInput/details": "@{outputs('Update_item')?['body/Title']}\n@{outputs('Update_item')?['body/Amount']}",
+              "WebhookApprovalCreationInput/itemLink": "@outputs('Update_item')?['body/{Link}']",
+              "WebhookApprovalCreationInput/itemLinkDescription": "@outputs('Update_item')?['body/Title']",
+              "WebhookApprovalCreationInput/enableNotifications": true,
+              "WebhookApprovalCreationInput/enableReassignment": true
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Condition": {
+          "actions": {
+            "Update_item_Status_Approved": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "437872fa-836f-4d61-b732-2a9485a0a01c"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "PatchItem",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://olddominion.sharepoint.com/sites/YT-Leaves",
+                  "table": "5e292124-014d-42ef-9579-ce97151b2fea",
+                  "id": "@outputs('Update_item')?['body/ID']",
+                  "item/Title": "@outputs('Update_item')?['body/Title']",
+                  "item/Status/Value": "Approved",
+                  "item/ApprovalInfo": "<p>@{outputs('Styled_HTML_table')}</p>"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {
+            "Styled_HTML_table": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Update_Item_Status_Rejected": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "5aa76bad-5ea5-450e-8e25-d5fcbc06dea5"
+                },
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "host": {
+                    "connectionName": "shared_sharepointonline",
+                    "operationId": "PatchItem",
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                  },
+                  "parameters": {
+                    "dataset": "https://olddominion.sharepoint.com/sites/YT-Leaves",
+                    "table": "5e292124-014d-42ef-9579-ce97151b2fea",
+                    "id": "@outputs('Update_item')?['body/ID']",
+                    "item/Title": "@outputs('Update_item')?['body/Title']",
+                    "item/Status/Value": "Rejected",
+                    "item/ApprovalInfo": "<p>@{outputs('Styled_HTML_table')}</p>"
+                  },
+                  "authentication": "@parameters('$authentication')"
+                }
+              }
+            }
+          },
+          "expression": {
+            "not": {
+              "contains": [
+                "@outputs('Start_and_wait_for_an_approval')?['body/outcome']",
+                "Reject"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "2d826e0e-60c2-4a4f-9a46-a584d20fcca4"
+          },
+          "type": "If"
+        },
+        "Create_HTML_table": {
+          "runAfter": {
+            "Start_and_wait_for_an_approval": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "4c843266-9bf7-4496-912a-2d38d74fc09e"
+          },
+          "type": "Table",
+          "inputs": {
+            "from": "@outputs('Start_and_wait_for_an_approval')?['body/responses']",
+            "format": "HTML",
+            "columns": [
+              {
+                "header": "Approver",
+                "value": "@item()?['responder/displayName']"
+              },
+              {
+                "header": "Decision",
+                "value": "@item()?['approverResponse']"
+              },
+              {
+                "header": "Cooments",
+                "value": "@item()?['comments']"
+              }
+            ]
+          }
+        },
+        "Styled_HTML_table": {
+          "runAfter": {
+            "Create_HTML_table": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "83374de4-8d0d-41bc-8c36-8c2a56d65bc7"
+          },
+          "type": "Compose",
+          "inputs": "@replace(replace(replace(body('Create_HTML_table'),'<table>','<table border=\"1px solid #ddd\" width=\"100%\" '),'<td>','<td style=\"padding:10px\">'),'<th>','<th style=\"padding:10px\">')"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

@@ -1,0 +1,12 @@
+<desktopflowbinary desktopflowbinaryid="02ebe164-dc76-4d12-8244-ff6e1fffeada">
+  <data mimetype="text/plain">Untitled.txt</data>
+  <iscustomizable>1</iscustomizable>
+  <metadata>{}</metadata>
+  <process>
+    <workflowid>a85a3eb4-c178-4541-b179-9ef759904fc6</workflowid>
+  </process>
+  <reference>flow.manifest</reference>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>ManifestFile</type>
+</desktopflowbinary>

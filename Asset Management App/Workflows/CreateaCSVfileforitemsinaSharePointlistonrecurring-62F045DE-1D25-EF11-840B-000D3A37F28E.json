@@ -1,0 +1,122 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedsharepointonline_7700c"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "Recurrence": {
+          "recurrence": {
+            "frequency": "Day",
+            "interval": 14
+          },
+          "metadata": {
+            "operationMetadataId": "1e1d7bc2-f745-4fe3-bc28-7bbd43606716"
+          },
+          "type": "Recurrence"
+        }
+      },
+      "actions": {
+        "Get_items": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "26fc1bc0-628c-4130-a47d-f40eb4e35429"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "GetItems",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://olddominion.sharepoint.com/sites/YT-Leaves",
+              "table": "5e292124-014d-42ef-9579-ce97151b2fea"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Create_CSV_table": {
+          "runAfter": {
+            "Get_items": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "1ec227bb-cb37-416b-9f88-da04c02db12e"
+          },
+          "type": "Table",
+          "inputs": {
+            "from": "@outputs('Get_items')?['body/value']",
+            "format": "CSV"
+          }
+        },
+        "Get_current_time": {
+          "runAfter": {
+            "Create_CSV_table": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c8848cea-5784-4f3f-9540-fe51f474811b"
+          },
+          "type": "Compose",
+          "inputs": "@utcnow('M')"
+        },
+        "Create_file": {
+          "runAfter": {
+            "Get_current_time": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5f8ebc88-a22e-4fd8-9e34-566d2e6d51f0"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "CreateFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://olddominion.sharepoint.com/sites/YT-Leaves",
+              "folderPath": "/Lists/Expense tracker",
+              "name": "SharePoint list items at @{outputs('Get_current_time')}.csv",
+              "body": "@body('Create_CSV_table')"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": "7503938820ac4f1db09540f18ce464a5"
+  },
+  "schemaVersion": "1.0.0.0"
+}

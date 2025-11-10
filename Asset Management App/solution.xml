@@ -1,0 +1,147 @@
+<ImportExportXml version="9.2.25095.165" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25095.165" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25101.00159">
+  <SolutionManifest>
+    <UniqueName>AssetManagement</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Asset Management" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>VR</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="VR" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>vr</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>12748</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="2" />
+      <RootComponent type="1" schemaName="vr_asset" behavior="0" />
+      <RootComponent type="1" schemaName="vr_assetallocation" behavior="0" />
+      <RootComponent type="1" schemaName="vr_assetallocationprocess" behavior="0" />
+      <RootComponent type="1" schemaName="vr_assetcheck" behavior="0" />
+      <RootComponent type="1" schemaName="vr_costcenter" behavior="0" />
+      <RootComponent type="1" schemaName="vr_expenses" behavior="0" />
+      <RootComponent type="1" schemaName="vr_lineitems" behavior="0" />
+      <RootComponent type="9" schemaName="vr_allocationcheck" behavior="0" />
+      <RootComponent type="9" schemaName="vr_allocationstatus" behavior="0" />
+      <RootComponent type="9" schemaName="vr_approvalstatus" behavior="0" />
+      <RootComponent type="29" id="{18336da1-0d22-ef11-840a-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{21435040-0321-ef11-840a-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{3d8f5923-be21-ef11-840a-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{513c18e4-7a24-ef11-840b-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{62f045de-1d25-ef11-840b-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{634aead7-ce21-ef11-840a-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{68ced2be-7424-ef11-840b-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{a85a3eb4-c178-4541-b179-9ef759904fc6}" behavior="0" />
+      <RootComponent type="29" id="{ac5a97fb-f220-ef11-840a-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{bf4e6dae-fe20-ef11-840a-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{d0e6f1b0-16d2-4700-b85b-5f350a0e1752}" behavior="0" />
+      <RootComponent type="29" id="{d9280227-b621-ef11-840a-000d3a37f28e}" behavior="0" />
+      <RootComponent type="29" id="{e3ce1494-3bf9-ef11-be1f-000d3a5bfc3e}" behavior="0" />
+      <RootComponent type="61" schemaName="msdyn_/Icons/AnalysisResult.svg" behavior="0" />
+      <RootComponent type="62" schemaName="vr_AssetManagementApp" behavior="0" />
+      <RootComponent type="80" schemaName="vr_AssetManagementApp" behavior="0" />
+      <RootComponent type="300" schemaName="vr_uber_332ab" behavior="0" />
+      <RootComponent type="431" schemaName="contact vr_profilepicture" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/AnalysisResult.svg" displayName="msdyn_/Icons/AnalysisResult.svg" solution="msdyn_PowerAppsChecker (2.0.0.167)">
+          <package appName="PowerAppsChecker" version="2.0.0.167">msdyn_PowerAppsCheckerAnchor (2.0.0.167)</package>
+        </Required>
+        <Dependent type="1" schemaName="vr_assetallocation" displayName="Asset Allocation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/AnalysisResult.svg" displayName="msdyn_/Icons/AnalysisResult.svg" solution="msdyn_PowerAppsChecker (2.0.0.167)">
+          <package appName="PowerAppsChecker" version="2.0.0.167">msdyn_PowerAppsCheckerAnchor (2.0.0.167)</package>
+        </Required>
+        <Dependent type="61" schemaName="msdyn_/Icons/AnalysisResult.svg" displayName="msdyn_/Icons/AnalysisResult.svg" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="vr_AssetManagementApp" displayName="Asset Management App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2510.1500)">
+          <package appName="Base Custom Controls" version="9.0.2510.1500">BaseCustomControlsCore (9.0.2510.1500)</package>
+        </Required>
+        <Dependent type="60" displayName="Asset Allocation main form" parentDisplayName="Asset Allocation" id="{d1d4a37a-f120-ef11-840a-000d3a37f28e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Rating.StarRatingControl" displayName="MscrmControls.Rating.StarRatingControl" solution="CustomControlsCore (9.2.25095.00165)">
+          <package appName="Custom Controls Package" version="9.2.25095.00165">CustomControlsCore (9.2.25095.00165)</package>
+        </Required>
+        <Dependent type="60" displayName="Asset Check main form" parentDisplayName="Asset Check" id="{2f18b0fc-ed20-ef11-840a-000d3a37f28e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.15)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.23">PowerAppsAppFramework_Anchor (1.0.0.23)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=vr_AssetManagementApp,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="vr_AssetManagementApp" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

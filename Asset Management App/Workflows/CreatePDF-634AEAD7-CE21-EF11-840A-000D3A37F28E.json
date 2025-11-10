@@ -1,0 +1,143 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_onedriveforbusiness": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedonedriveforbusiness_41de2"
+        },
+        "api": {
+          "name": "shared_onedriveforbusiness"
+        }
+      },
+      "shared_teams": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedteams_612ed"
+        },
+        "api": {
+          "name": "shared_teams"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_file_is_created": {
+          "recurrence": {
+            "interval": 1,
+            "frequency": "Minute"
+          },
+          "metadata": {
+            "6e202211-2856-4d17-9ded-5beb8b8626b0": "/",
+            "b!OZ3Z_MRmokiKc37ZZd_wPFoKaAOpX3tDgR4uzMYXGqfjHzNHEeyiSo1Li3QXukHg.01WMUQJMFIQ2KZHW5WBBHZZ4YTRYEBDWPY": "/PowerPlatformsApps",
+            "operationMetadataId": "965052c2-1d43-4099-8f02-bbf9fbc469d1"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_onedriveforbusiness",
+              "operationId": "OnNewFileV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+            },
+            "parameters": {
+              "folderId": "b!OZ3Z_MRmokiKc37ZZd_wPFoKaAOpX3tDgR4uzMYXGqfjHzNHEeyiSo1Li3QXukHg.01WMUQJMFIQ2KZHW5WBBHZZ4YTRYEBDWPY"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Convert_file": {
+          "runAfter": {},
+          "metadata": {
+            "b!OZ3Z_MRmokiKc37ZZd_wPFoKaAOpX3tDgR4uzMYXGqfjHzNHEeyiSo1Li3QXukHg.01WMUQJMF6ILN5H5LMWBGZ5TKEF2OMC4AH": "/HW11_Answers.docx",
+            "b!OZ3Z_MRmokiKc37ZZd_wPFoKaAOpX3tDgR4uzMYXGqfjHzNHEeyiSo1Li3QXukHg.01WMUQJMENEKBPEKHKRZD3YBCODIWX25RQ": "/PowerPlatformsApps/Inventory Mangement App.xlsx",
+            "operationMetadataId": "9d936fd1-8bbe-490c-bb80-8e7826ad3791"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_onedriveforbusiness",
+              "operationId": "ConvertFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+            },
+            "parameters": {
+              "id": "@triggerOutputs()?['headers/x-ms-file-id']",
+              "type": "PDF"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Create_file": {
+          "runAfter": {
+            "Convert_file": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "4fd9d936-393f-4b5c-9ece-0eba91522228"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_onedriveforbusiness",
+              "operationId": "CreateFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+            },
+            "parameters": {
+              "folderPath": "/Apps",
+              "name": "@outputs('Convert_file')?['headers/x-ms-file-name']",
+              "body": "@body('Convert_file')"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        },
+        "Post_message_in_a_chat_or_channel": {
+          "runAfter": {
+            "Create_file": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "394b30c9-7b9c-4836-8bd2-2832e2325a6f"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "poster": "Flow bot",
+              "location": "Chat with Flow bot",
+              "body/recipient": "ssura005@odu.edu",
+              "body/messageBody": "<p>@{outputs('Create_file')?['body/Name']}  Converted to PDF </p>"
+            },
+            "host": {
+              "connectionName": "shared_teams",
+              "operationId": "PostMessageToConversation",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

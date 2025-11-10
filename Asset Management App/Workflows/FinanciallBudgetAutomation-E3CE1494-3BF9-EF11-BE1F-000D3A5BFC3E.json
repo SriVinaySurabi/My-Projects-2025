@@ -1,0 +1,163 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_gmail": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedgmail_245d5"
+        },
+        "api": {
+          "name": "shared_gmail"
+        }
+      },
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedsharepointonline_7700c"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_an_item_is_created_or_modified": {
+          "recurrence": {
+            "interval": 1,
+            "frequency": "Minute"
+          },
+          "splitOn": "@triggerOutputs()?['body/value']",
+          "metadata": {
+            "operationMetadataId": "53fed67d-ba2a-4cb5-869f-4f58b8d6141f"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "GetOnUpdatedItems",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://olddominion.sharepoint.com/sites/PowerPlatform",
+              "table": "a35c5701-4bf4-4f85-8a1d-786a31027034"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Send_email_(V2)": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "8cda3118-f4da-4404-bd38-a79933b4ac17"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_gmail",
+                  "operationId": "SendEmailV2",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_gmail"
+                },
+                "parameters": {
+                  "emailMessage/To": "ssura005@odu.edu",
+                  "emailMessage/Subject": "Amount Exceed",
+                  "emailMessage/Body": "<p>Hello, '<br>\nYour financial amount spending has exceeded greater than your budget Limit, please keep the amount spent within the limit. If necessary please take action.<br>\nThank you!<br>\n<br>\nDepartment: @{triggerOutputs()?['body/field_1/Value']}<br>\n<br>\nExpense Category: @{triggerOutputs()?['body/field_2/Value']}<br>\n<br>\nAmount Spent: @{triggerOutputs()?['body/field_3']}<br>\n<br>\nBudget Limit: @{triggerOutputs()?['body/field_4']}</p>"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Update_item": {
+              "runAfter": {
+                "Send_email_(V2)": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "d4228284-2915-45b1-8266-6920fc0d34f5"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "PatchItem",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://olddominion.sharepoint.com/sites/PowerPlatform",
+                  "table": "a35c5701-4bf4-4f85-8a1d-786a31027034",
+                  "id": "@triggerOutputs()?['body/ID']",
+                  "item/Title": "@triggerOutputs()?['body/Title']",
+                  "item/field_1/Value": "@triggerOutputs()?['body/field_1/Value']",
+                  "item/field_2/Value": "@triggerOutputs()?['body/field_2/Value']",
+                  "item/field_3": "@triggerOutputs()?['body/field_3']",
+                  "item/field_4": "@triggerOutputs()?['body/field_4']",
+                  "item/field_5": "@triggerOutputs()?['body/field_5']",
+                  "item/field_6/Value": "Over Budget"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {},
+          "else": {
+            "actions": {
+              "Update_item_2": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "fa90cccc-d64b-4f4c-b7ae-0b623f29717e"
+                },
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "host": {
+                    "connectionName": "shared_sharepointonline",
+                    "operationId": "PatchItem",
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                  },
+                  "parameters": {
+                    "dataset": "https://olddominion.sharepoint.com/sites/PowerPlatform",
+                    "table": "a35c5701-4bf4-4f85-8a1d-786a31027034",
+                    "id": "@triggerOutputs()?['body/ID']",
+                    "item/Title": "@triggerOutputs()?['body/Title']",
+                    "item/field_1/Value": "@triggerOutputs()?['body/field_1/Value']",
+                    "item/field_2/Value": "@triggerOutputs()?['body/field_2/Value']",
+                    "item/field_3": "@triggerOutputs()?['body/field_3']",
+                    "item/field_4": "@triggerOutputs()?['body/field_4']",
+                    "item/field_5": "@triggerOutputs()?['body/field_5']"
+                  },
+                  "authentication": "@parameters('$authentication')"
+                }
+              }
+            }
+          },
+          "expression": {
+            "greater": [
+              "@triggerOutputs()?['body/field_3']",
+              "@triggerOutputs()?['body/field_4']"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "8a6d2a3c-45c9-4784-97cb-5265ef47725c"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

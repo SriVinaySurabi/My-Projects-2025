@@ -1,0 +1,647 @@
+{
+  "Screens": [
+    {
+      "Controls": [
+        {
+          "AutomationProtocol": "uia3",
+          "ScreenShot": null,
+          "ElementTypeName": "Anchor",
+          "InstanceId": "6bc97ca5-c7ab-47d2-8824-d7aa5a390a20",
+          "Name": "Anchor 'COUNTIFS Function in Excel'",
+          "SelectorCount": 1,
+          "Selectors": [
+            {
+              "CustomSelector": null,
+              "Elements": [
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "page-template-default page page-id-14353 wp-embed-responsive"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Body 'We value your privacyWe use cookies to enhance your  ... false,\"nonce\":\"0389f73779\"}; Notifications'",
+                  "Tag": "body"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "flex flex-col min-h-screen"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Business Charts in Excel course is NOW AVAILABLE!  ...  for a brighter future. Learn more about how we help'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "main grow"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Main content 'All Tutorials <img decoding=\"async\" width=\"720\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "main"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "xelplus-block xelplus-block-container "
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "block_ac48159c9400c1d1d3ab20689d8e6507"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'All Tutorials <img decoding=\"async\" width=\"720\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": " text-dark"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'All Tutorials <img decoding=\"async\" width=\"720\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "container max-w-screen"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'All Tutorials <img decoding=\"async\" width=\"720\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'All Tutorials <img decoding=\"async\" width=\"720\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "xelplus-block xelplus-block-tutorials-grid-turbo "
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "block_6fe2f7d7746a78003322e2107857c04a"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div '<img decoding=\"async\" width=\"720\" height=\"405\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div '<img decoding=\"async\" width=\"720\" height=\"405\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "post-grid-turbo"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Turbo-frame '<img decoding=\"async\" width=\"720\" height=\"405\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "turbo-frame"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Div '<img decoding=\"async\" width=\"720\" height=\"405\"  ...  Continue Reading Posts navigation1 2 … 42 Next'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "grid md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-6 lg:gap-y-12"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Div '<img decoding=\"async\" width=\"720\" height=\"405\"  ...  make notes, and share them easily. Continue Reading'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "flex flex-col rounded group hover:shadow p-2 border bg-white"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Div '<img decoding=\"async\" width=\"720\" height=\"405\"  ...  tool. Free practice file included. Continue Reading'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "grow flex flex-col p-6"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Div 'ExcelCOUNTIFS Function in ExcelMaster the COUNTIFS  ...  tool. Free practice file included. Continue Reading'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "leading-6 h4"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Heading 2 'COUNTIFS Function in Excel'",
+                  "Tag": "h2"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "leading-6 text-gray-900 h4"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Href",
+                      "Operation": "EqualTo",
+                      "Value": "https://www.xelplus.com/excel-countifs-function/"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Text",
+                      "Operation": "EqualTo",
+                      "Value": "COUNTIFS Function in Excel"
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Anchor 'COUNTIFS Function in Excel'",
+                  "Tag": "a"
+                }
+              ],
+              "Ignore": false,
+              "IsCustom": false,
+              "IsWindowsInstance": false,
+              "Name": "Default Selector",
+              "Properties": []
+            }
+          ],
+          "Tag": "a",
+          "ScreenshotPath": "controlRepo-screenshots\\c8bc0370-2c52-466a-b9ee-c5772e8da8b6.png"
+        }
+      ],
+      "ScreenShot": null,
+      "ElementTypeName": "Web Page",
+      "InstanceId": "0e66f811-0101-4c41-8c05-6e2ad8686819",
+      "Name": "Web Page 'https://www.xelplus.com/all-tutorials/'",
+      "SelectorCount": 1,
+      "Selectors": [
+        {
+          "CustomSelector": null,
+          "Elements": [
+            {
+              "Attributes": [],
+              "CustomValue": "domcontainer",
+              "Ignore": false,
+              "Name": "Web Page 'https://www.xelplus.com/all-tutorials/'",
+              "Tag": "domcontainer"
+            }
+          ],
+          "Ignore": false,
+          "IsCustom": false,
+          "IsWindowsInstance": false,
+          "Name": "Default Selector",
+          "Properties": []
+        }
+      ],
+      "Tag": "domcontainer",
+      "ScreenshotPath": "controlRepo-screenshots\\02475e1e-0514-42c9-988f-be333e9deb93.png"
+    }
+  ],
+  "Version": 1
+}

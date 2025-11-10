@@ -1,0 +1,1526 @@
+{
+  "Screens": [
+    {
+      "Controls": [
+        {
+          "AutomationProtocol": "uia3",
+          "ScreenShot": null,
+          "ElementTypeName": "Span",
+          "InstanceId": "7ec2f654-34ba-4711-bccf-b528043db42e",
+          "Name": "Span '15KG'",
+          "SelectorCount": 1,
+          "Selectors": [
+            {
+              "CustomSelector": null,
+              "Elements": [
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "d-flex flex-column h-100"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Body 'Power Automate Tutorials Home Beginners Course  ... 3f45;top:24px;right:24px;margin-bottom:0}}'",
+                  "Tag": "body"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "flex-shrink-0"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Main content 'Power Automate Tutorials Home Beginners Course  ...  .formkit-column:nth-child(2){border-top:none;}'",
+                  "Tag": "main"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "container px-5 my-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Chapter 4: Variables Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "py-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Section 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "section"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "container px-5 mb-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "row gx-5 justify-content-center"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "col-lg-4"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "card overflow-hidden shadow rounded-4 border-0 mb-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "card-body p-0"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "d-flex align-items-center"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "p-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "weight1"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Weight: 15KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "weight1"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Text",
+                      "Operation": "EqualTo",
+                      "Value": "15KG"
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Span '15KG'",
+                  "Tag": "span"
+                }
+              ],
+              "Ignore": false,
+              "IsCustom": false,
+              "IsWindowsInstance": false,
+              "Name": "Default Selector",
+              "Properties": []
+            }
+          ],
+          "Tag": "span",
+          "ScreenshotPath": "controlRepo-screenshots\\3d4aed3b-e00c-442a-a8fc-5010cf3d345c.png"
+        },
+        {
+          "AutomationProtocol": "uia3",
+          "ScreenShot": null,
+          "ElementTypeName": "Span",
+          "InstanceId": "203fe360-4291-4ac7-a0b8-217595da41a8",
+          "Name": "Span '20KG'",
+          "SelectorCount": 1,
+          "Selectors": [
+            {
+              "CustomSelector": null,
+              "Elements": [
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "d-flex flex-column h-100"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Body 'Power Automate Tutorials Home Beginners Course  ... 3f45;top:24px;right:24px;margin-bottom:0}}'",
+                  "Tag": "body"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "flex-shrink-0"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Main content 'Power Automate Tutorials Home Beginners Course  ...  .formkit-column:nth-child(2){border-top:none;}'",
+                  "Tag": "main"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "container px-5 my-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Chapter 4: Variables Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "py-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Section 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "section"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "container px-5 mb-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "row gx-5 justify-content-center"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "col-lg-4"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 2 Weight: 20KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "card overflow-hidden shadow rounded-4 border-0 mb-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 2 Weight: 20KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "card-body p-0"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 2 Weight: 20KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "d-flex align-items-center"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 2 Weight: 20KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "p-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 2 Weight: 20KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "weight2"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Weight: 20KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "weight2"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Text",
+                      "Operation": "EqualTo",
+                      "Value": "20KG"
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Span '20KG'",
+                  "Tag": "span"
+                }
+              ],
+              "Ignore": false,
+              "IsCustom": false,
+              "IsWindowsInstance": false,
+              "Name": "Default Selector",
+              "Properties": []
+            }
+          ],
+          "Tag": "span",
+          "ScreenshotPath": "controlRepo-screenshots\\59d3b978-0d5d-4aee-a075-ba6565c25e40.png"
+        },
+        {
+          "AutomationProtocol": "uia3",
+          "ScreenShot": null,
+          "ElementTypeName": "Span",
+          "InstanceId": "d6456430-b347-40f6-b12d-f585e0ed0075",
+          "Name": "Span '40KG'",
+          "SelectorCount": 1,
+          "Selectors": [
+            {
+              "CustomSelector": null,
+              "Elements": [
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "d-flex flex-column h-100"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Body 'Power Automate Tutorials Home Beginners Course  ... 3f45;top:24px;right:24px;margin-bottom:0}}'",
+                  "Tag": "body"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "flex-shrink-0"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Main content 'Power Automate Tutorials Home Beginners Course  ...  .formkit-column:nth-child(2){border-top:none;}'",
+                  "Tag": "main"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "container px-5 my-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Chapter 4: Variables Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "py-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Section 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "section"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "container px-5 mb-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "row gx-5 justify-content-center"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Suitcase 1 Weight: 15KG Suitcase 2 Weight: 20KG Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "col-lg-4"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "card overflow-hidden shadow rounded-4 border-0 mb-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "card-body p-0"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "d-flex align-items-center"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": "p-5"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Bagage Restrictions Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "weight_max"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": true,
+                  "Name": "Div 'Max total weight: 40KG'",
+                  "Tag": "div"
+                },
+                {
+                  "Attributes": [
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Class",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": false,
+                      "IsOrdinal": false,
+                      "Name": "Id",
+                      "Operation": "EqualTo",
+                      "Value": "weight_max"
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": true,
+                      "Name": "Ordinal",
+                      "Operation": "EqualTo",
+                      "Value": 0
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Title",
+                      "Operation": "EqualTo",
+                      "Value": null
+                    },
+                    {
+                      "Ignore": true,
+                      "IsOrdinal": false,
+                      "Name": "Text",
+                      "Operation": "EqualTo",
+                      "Value": "40KG"
+                    }
+                  ],
+                  "CustomValue": null,
+                  "Ignore": false,
+                  "Name": "Span '40KG'",
+                  "Tag": "span"
+                }
+              ],
+              "Ignore": false,
+              "IsCustom": false,
+              "IsWindowsInstance": false,
+              "Name": "Default Selector",
+              "Properties": []
+            }
+          ],
+          "Tag": "span",
+          "ScreenshotPath": "controlRepo-screenshots\\692d5ec8-7f77-4327-8edd-634fefdd8db9.png"
+        }
+      ],
+      "ScreenShot": null,
+      "ElementTypeName": "Web Page",
+      "InstanceId": "7824ba21-d0d3-42be-85cc-455fabcbcadf",
+      "Name": "Web Page 'h ... variables/'",
+      "SelectorCount": 1,
+      "Selectors": [
+        {
+          "CustomSelector": null,
+          "Elements": [
+            {
+              "Attributes": [],
+              "CustomValue": "domcontainer",
+              "Ignore": false,
+              "Name": "Web Page 'https://www.powerautomatetutorials.com/power-automate-desktop-beginners-course/chapter-4-variables/'",
+              "Tag": "domcontainer"
+            }
+          ],
+          "Ignore": false,
+          "IsCustom": false,
+          "IsWindowsInstance": false,
+          "Name": "Default Selector",
+          "Properties": []
+        }
+      ],
+      "Tag": "domcontainer",
+      "ScreenshotPath": "controlRepo-screenshots\\6df4054c-fdb1-40c6-a32f-3ef9db4e40a7.png"
+    }
+  ],
+  "Version": 1
+}

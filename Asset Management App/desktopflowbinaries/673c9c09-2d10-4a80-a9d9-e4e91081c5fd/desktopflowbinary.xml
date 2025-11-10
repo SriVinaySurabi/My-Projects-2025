@@ -1,0 +1,12 @@
+<desktopflowbinary desktopflowbinaryid="673c9c09-2d10-4a80-a9d9-e4e91081c5fd">
+  <data mimetype="text/plain">Untitled.txt</data>
+  <iscustomizable>1</iscustomizable>
+  <metadata>{}</metadata>
+  <process>
+    <workflowid>a85a3eb4-c178-4541-b179-9ef759904fc6</workflowid>
+  </process>
+  <reference>controlRepo-screenshots\02475e1e-0514-42c9-988f-be333e9deb93.png</reference>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>ControlRepositoryImageFile</type>
+</desktopflowbinary>

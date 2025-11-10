@@ -1,0 +1,107 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_msnweather": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedmsnweather_c9ae5"
+        },
+        "api": {
+          "name": "shared_msnweather"
+        }
+      },
+      "shared_gmail": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedgmail_13da0"
+        },
+        "api": {
+          "name": "shared_gmail"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "a38d98c9-d150-45c8-a277-b67cac24186c"
+          },
+          "type": "Request",
+          "kind": "Button",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            }
+          }
+        }
+      },
+      "actions": {
+        "Get_current_weather": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "14520e89-617b-4951-b229-fb7159825e2c"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_msnweather",
+              "operationId": "CurrentWeather",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_msnweather"
+            },
+            "parameters": {
+              "Location": "Norfolk",
+              "units": "I"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Send_email_(V2)": {
+          "runAfter": {
+            "Get_current_weather": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "69a956a3-7553-4ebd-8f64-0398ef2ff5a8"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_gmail",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_gmail"
+            },
+            "parameters": {
+              "emailMessage/To": "ssura005@odu.edu",
+              "emailMessage/Subject": "weather forecast",
+              "emailMessage/Body": "<p>Hi, <br>\n<br>\nThis the Location : @{outputs('Get_current_weather')?['body/responses/source/location']}<br>\nThe condition is : @{outputs('Get_current_weather')?['body/responses/weather/current/cap']}<br>\nThe temperature is : @{outputs('Get_current_weather')?['body/units/temperature']}<br>\nHave a nice day. </p>"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

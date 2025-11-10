@@ -1,0 +1,105 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_msnweather": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedmsnweather_c9ae5"
+        },
+        "api": {
+          "name": "shared_msnweather"
+        }
+      },
+      "shared_teams": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedteams_612ed"
+        },
+        "api": {
+          "name": "shared_teams"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "Recurrence": {
+          "recurrence": {
+            "frequency": "Week",
+            "interval": 1,
+            "timeZone": "Eastern Standard Time",
+            "startTime": "2024-06-07T03:15:00Z",
+            "schedule": {
+              "weekDays": [
+                "Thursday"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "f22b989f-a24a-417a-b3c1-6be60d6e282a"
+          },
+          "type": "Recurrence"
+        }
+      },
+      "actions": {
+        "Get_forecast_for_today": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "3ac8d2a1-ec1d-4c3c-803e-d76a89cd86de"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_msnweather",
+              "operationId": "TodaysForecast",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_msnweather"
+            },
+            "parameters": {
+              "Location": "23508",
+              "units": "I"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Post_message_in_a_chat_or_channel": {
+          "runAfter": {
+            "Get_forecast_for_today": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "0ecd68e2-e7a3-4625-a5db-054ca7abb372"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_teams",
+              "operationId": "PostMessageToConversation",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams"
+            },
+            "parameters": {
+              "poster": "Flow bot",
+              "location": "Chat with Flow bot",
+              "body/recipient": "ssura005@odu.edu;",
+              "body/messageBody": "<p>Hi this is the weather for today @{outputs('Get_forecast_for_today')?['body/responses/daily/day/cap']} @{outputs('Get_forecast_for_today')?['body/units/temperature']}&nbsp;</p>"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}
